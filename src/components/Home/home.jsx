@@ -17,12 +17,16 @@ const Home = (props) => {
         <br />
         on blockchain.
       </h2>
+      <br />
+
       <img
         src="https://scientifica.ch/wp-content/uploads/2021/07/119_provotum-system-xtra-small.png"
         alt=""
         width="600"
         height="400"
       />
+      <br />
+
       <Table>
         <thead>
           <tr>

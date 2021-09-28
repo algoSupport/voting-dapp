@@ -6,6 +6,7 @@ import {
   AppstoreOutlined,
   MailOutlined,
   SettingOutlined,
+  MoneyCollectOutlined,
 } from "@ant-design/icons";
 
 const { SubMenu } = Menu;
@@ -38,6 +39,9 @@ export default class SiderBar extends React.Component {
           </Menu.Item>
           <Menu.Item icon={<SettingOutlined />} key="9">
             New Poll
+          </Menu.Item>
+          <Menu.Item icon={<MoneyCollectOutlined />} key="9">
+            Donate Now
           </Menu.Item>
         </Menu>
       </>
