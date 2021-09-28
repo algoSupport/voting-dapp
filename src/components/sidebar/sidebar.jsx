@@ -31,11 +31,11 @@ export default class SiderBar extends React.Component {
             <Menu.Item key="2">Current News</Menu.Item>
           </SubMenu>
           <Menu.Item
-            onClick={window.address === "" ? login : logout}
+            onClick={window.accountId === "" ? login : logout}
             icon={<AppstoreOutlined />}
             key="5"
           >
-            {window.address === "" ? "login" : window.address}
+            {window.accountId === "" ? "Login" : window.accountId}
           </Menu.Item>
           <Menu.Item icon={<SettingOutlined />} key="9">
             New Poll
