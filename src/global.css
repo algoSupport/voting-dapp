@@ -3,3 +3,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --bg: #fffdfd;
+  --accent: #000c17;
+  --dark-clr: #2f2e41;
+  --light-clr: #1890ff; /* footer color */
+  --dark-shade-1: #494859;
+  /* Transparent shades*/
+  /* Light */
+  --light-18per: hsl(0, 100%, 100%, 18%); /* pricing main /mo bg*/
+  --light-50per: hsl(0, 100%, 100%, 50%); /* pricing main usd/mo*/
+  --light-80per: hsl(0, 100%, 100%, 80%); /* pricing main stricken*/
+  /* Dark */
+  --dark-15per: hsl(244, 11%, 32%, 15%); /* pricing 1,3 /mo bg*/
+  --dark-50per: hsl(243, 17%, 22%, 50%); /* pricing 1,3 usd/mo*/
+  --dark-80per: hsl(243, 17%, 22%, 80%); /* pricing 1,3 stricken*/
+  /* Fonts */
+  --cp: "Courier Prime", monospace;
+  --rm: "roboto-mono", monospace;
+  --pop: "poppins", sans-serif;
+}
+
+.s-vpn {
+  font-weight: 700;
+  color: var(--dark-clr);
+}
+#home {
+  padding: 80px 0 0 0;
+}
+#home h2 {
+  color: var(--dark-clr);
+  font-size: 3rem;
+  font-weight: 400;
+}
+.product-name {
+  font-family: var(--cp);
+  color: var(--light-clr);
+  font-size: 3.5rem;
+}

@@ -1,7 +1,6 @@
-import { Tab } from "bootstrap";
 import React from "react";
 import { Table, Container } from "react-bootstrap";
-import {Button} from 'antd'
+import { Button } from "antd";
 
 const Home = (props) => {
   const promptList = [
@@ -11,7 +10,20 @@ const Home = (props) => {
 
   return (
     <Container>
-      <Table style={{ margin: "5vh" }}>
+      <h2>
+        Believe in a <strong>cause</strong> <br /> that can change the world{" "}
+        <br />
+        <span className="product-name">Vote Now</span>
+        <br />
+        on blockchain.
+      </h2>
+      <img
+        src="https://scientifica.ch/wp-content/uploads/2021/07/119_provotum-system-xtra-small.png"
+        alt=""
+        width="600"
+        height="400"
+      />
+      <Table>
         <thead>
           <tr>
             <th>#</th>
