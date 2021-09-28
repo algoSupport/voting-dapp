@@ -24,7 +24,6 @@ export default class SiderBar extends React.Component {
           defaultSelectedKeys={["1"]}
           defaultOpenKeys={["sub1"]}
           mode="inline"
-          theme="dark"
         >
           <SubMenu key="sub1" icon={<MailOutlined />} title="Voting Info">
             <Menu.Item key="1">Vote Now</Menu.Item>
