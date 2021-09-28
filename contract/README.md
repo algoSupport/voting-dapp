@@ -1,4 +1,4 @@
-blockvote Smart Contract
+DecentralHack Smart Contract
 ==================
 
 A [smart contract] written in [AssemblyScript] for an app initialized with [create-near-app]
