@@ -1,5 +1,6 @@
 import React from "react";
 import { login, logout } from "../../utils";
+import { Link } from "react-router-dom";
 
 import { Menu } from "antd";
 import {
@@ -27,7 +28,9 @@ export default class SiderBar extends React.Component {
           mode="inline"
         >
           <SubMenu key="sub1" icon={<MailOutlined />} title="Voting Info">
-            <Menu.Item key="1">Vote Now</Menu.Item>
+            <Menu.Item key="1">
+              <Link to="/">Vote Now</Link>
+            </Menu.Item>
             <Menu.Item key="2">Current News</Menu.Item>
           </SubMenu>
           <Menu.Item
@@ -37,11 +40,11 @@ export default class SiderBar extends React.Component {
           >
             {window.accountId === "" ? "Login" : window.accountId}
           </Menu.Item>
-          <Menu.Item icon={<SettingOutlined />} key="9">
-            New Poll
+          <Menu.Item icon={<SettingOutlined />} key="6">
+            <Link to="/new-poll">New Poll</Link>
           </Menu.Item>
-          <Menu.Item icon={<MoneyCollectOutlined />} key="9">
-            Donate Now
+          <Menu.Item icon={<MoneyCollectOutlined />} key="7">
+            <Link to="/new-poll">Donate Now</Link>
           </Menu.Item>
         </Menu>
       </>

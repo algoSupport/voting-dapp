@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Table, Container } from "react-bootstrap";
 import { Button } from "antd";
 
@@ -11,7 +12,7 @@ const Home = (props) => {
   return (
     <Container>
       <h2>
-        Believe in a <strong>cause</strong> <br /> that can change the world{" "}
+        Believe in a <strong>cause</strong> <br /> that can change the world?{" "}
         <br />
         <span className="product-name">Vote Now</span>
         <br />
@@ -43,7 +44,9 @@ const Home = (props) => {
                 <td>{el}</td>
                 <td>
                   {" "}
-                  <Button type="primary">Go to Poll</Button>
+                  <Button type="primary">
+                    <Link to="/polling-station">Go to Poll</Link>
+                  </Button>
                 </td>
               </tr>
             );
