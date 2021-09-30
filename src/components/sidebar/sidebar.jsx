@@ -46,7 +46,7 @@ export default class SiderBar extends React.Component {
             <Link to="/new-poll">New Poll</Link>
           </Menu.Item>
           <Menu.Item icon={<MoneyCollectOutlined />} key="7">
-            <Link to="/new-poll">Donate Now</Link>
+            <Link to="/donation">Donate Now</Link>
           </Menu.Item>
         </Menu>
       </>

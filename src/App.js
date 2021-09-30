@@ -10,6 +10,7 @@ import NewsList from "./components/news/newsPage";
 import NewPoll from "./components/new-poll/new-poll";
 import PollingStation from "./components/polling-station/polling-station";
 import Home from "./components/Home/home";
+import DonationPage from "./components/Donation/donation";
 const { networkId } = getConfig(process.env.NODE_ENV || "development");
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
               <Route exact path="/" component={Home} />
               <Route exact path="/currentNews" component={NewsList} />
               <Route exact path="/new-poll" component={NewPoll} />
+              <Route exact path="/donation" component={DonationPage} />
               <Route exact path="/polling-station" component={PollingStation} />
                
             </Switch>
