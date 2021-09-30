@@ -15,7 +15,7 @@ export default function App() {
 
   const changeCandidatesFunction = async ( prompt ) => {
     console.log( prompt )
-    namePair = await window.contract.getCandidatePair( { prompt: prompt } );
+    let namePair = await window.contract.getCandidatePair( { prompt: prompt } );
     localStorage.setItem( "Candidate1", namePair[ 0 ] );
     localStorage.setItem( "Candidate2", namePair[ 1 ] );
     localStorage.setItem( "prompt", prompt );
