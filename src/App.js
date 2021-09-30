@@ -9,22 +9,27 @@ import SiderBar from "./components/sidebar/sidebar";
 import NewPoll from "./components/new-poll/new-poll";
 import PollingStation from "./components/polling-station/polling-station";
 import Home from "./components/Home/home";
-const { networkId } = getConfig(process.env.NODE_ENV || "development");
+const { networkId } = getConfig( process.env.NODE_ENV || "development" );
 
 export default function App() {
+
+  const changeCandidatesFunction = async ( prompt ) => {
+
+  }
+
   return (
     <Router>
       <Navbar />
-      <div style={{ padding: "100px" }}>
+      <div style={ { padding: "100px" } }>
         <Row>
-          <Col span={8}>
+          <Col span={ 8 }>
             <SiderBar />
           </Col>
-          <Col span={16}>
+          <Col span={ 16 }>
             <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/new-poll" component={NewPoll} />
-              <Route exact path="/polling-station" component={PollingStation} />
+              <Route exact path="/" component={ Home } />
+              <Route exact path="/new-poll" component={ NewPoll } />
+              <Route exact path="/polling-station" component={ PollingStation } />
             </Switch>
           </Col>
         </Row>

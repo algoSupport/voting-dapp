@@ -37,7 +37,7 @@ const PollingStation = (props) => {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    fontSize: "8vw",
+                    fontSize: "4vw",
                     padding: "10px",
                   }}
                 >
@@ -93,7 +93,8 @@ const PollingStation = (props) => {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    fontSize: "8vw",
+                    fontSize: "4vw",
+                    padding: "10px",
                   }}
                 >
                   3

@@ -34,6 +34,7 @@
   "dependencies": {
     "antd": "^4.16.13",
     "near-api-js": "~0.41.0",
+    "near-sdk-as": "^3.2.3",
     "react": "~17.0.1",
     "react-bootstrap": "^1.6.4",
     "react-dom": "~17.0.1",
