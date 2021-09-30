@@ -31,7 +31,9 @@ export default class SiderBar extends React.Component {
             <Menu.Item key="1">
               <Link to="/">Vote Now</Link>
             </Menu.Item>
-            <Menu.Item key="2">Current News</Menu.Item>
+            <Menu.Item key="2">
+              <Link to="/currentNews">Current News</Link>
+            </Menu.Item>
           </SubMenu>
           <Menu.Item
             onClick={window.accountId === "" ? login : logout}
