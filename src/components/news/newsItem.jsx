@@ -8,10 +8,10 @@ const NewsItem = ({urlToImage,description,title}) => {
     return ( 
         <Card
     hoverable
-    style={{ width: 240, height: 400 }}
+    style={{ width: 240, height: 360, marginBottom:"30px" }}
     cover={<img alt="images" src={urlToImage} />}
   >
-    <Meta title={title} description={description} />
+    <Meta title={title} description={description.slice(0,120)} />
   </Card>
  
      );

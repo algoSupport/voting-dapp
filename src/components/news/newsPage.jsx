@@ -29,7 +29,8 @@ export default function NewsList() {
   return (
     <>
       
-      <div className="container-fluid p-5 mt-5 pt-5">
+      <div className="container-fluid p-5  pt-5">
+        <h1 style={{marginBottom:"50px"}}>Latest News</h1>
         <div className="site-card-wrapper">
           <Row gutter={16}>
             {data.articles.map(({urlToImage,description,title}) => (
