@@ -14,6 +14,12 @@ const { networkId } = getConfig( process.env.NODE_ENV || "development" );
 export default function App() {
 
   const changeCandidatesFunction = async ( prompt ) => {
+    console.log( prompt )
+    namePair = await window.contract.getCandidatePair( { prompt: prompt } );
+    localStorage.setItem( "Candidate1", namePair[ 0 ] );
+    localStorage.setItem( "Candidate2", namePair[ 1 ] );
+    localStorage.setItem( "prompt", prompt );
+    window.location.replace( window.location.href + "polling-station" )
 
   }
 
@@ -27,7 +33,9 @@ export default function App() {
           </Col>
           <Col span={ 16 }>
             <Switch>
-              <Route exact path="/" component={ Home } />
+              <Route exact path="/" >
+                <Home changeCandidates={ changeCandidatesFunction } />
+              </Route>
               <Route exact path="/new-poll" component={ NewPoll } />
               <Route exact path="/polling-station" component={ PollingStation } />
             </Switch>

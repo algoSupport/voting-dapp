@@ -43,6 +43,15 @@ export function getVote(prompt: string): i32[] {
   }
 }
 
+export function getCandidatePair(prompt: string): string[] {
+  if (CandidatePair.contains(prompt)) {
+    return CandidatePair.getSome(prompt)
+  } else {
+    logging.log('prompt not found')
+    return []
+  }
+}
+
 export function addUrl(name: string, url: string): void {
   CandidateURL.set(name, url);
   logging.log('add url for ' + name);
