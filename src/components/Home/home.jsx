@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Table, Container } from "react-bootstrap";
 import { Button } from "antd";
 
-const Home = (props) => {
+const Home = ( props ) => {
   const promptList = [
     "Do you want to reopen college?",
     "Who is the better actor?",
@@ -12,7 +12,7 @@ const Home = (props) => {
   return (
     <Container>
       <h2>
-        Believe in a <strong>cause</strong> <br /> that can change the world?{" "}
+        Believe in a <strong>cause</strong> <br /> that can change the world?{ " " }
         <br />
         <span className="product-name">Vote Now</span>
         <br />
@@ -37,20 +37,20 @@ const Home = (props) => {
           </tr>
         </thead>
         <tbody>
-          {promptList.map((el, index) => {
+          { promptList.map( ( el, index ) => {
             return (
-              <tr key={index}>
-                <td>{index + 1}</td>
-                <td>{el}</td>
+              <tr key={ index }>
+                <td>{ index + 1 }</td>
+                <td>{ el }</td>
                 <td>
-                  {" "}
-                  <Button type="primary">
-                    <Link to="/polling-station">Go to Poll</Link>
+                  { " " }
+                  <Button onClick={ () => props.changeCandidates( el ) } type="primary">
+                    Go to Poll
                   </Button>
                 </td>
               </tr>
             );
-          })}
+          } ) }
         </tbody>
       </Table>
     </Container>
