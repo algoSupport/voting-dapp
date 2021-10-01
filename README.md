@@ -1,6 +1,6 @@
 The Voting Game
 ==================
-** The Voting Game is a party game that uncovers the hilarious truth behind your friendships. Personal stories are often shared after a revealing vote.**
+**The Voting Game is a party game that uncovers the hilarious truth behind your friendships. Personal stories are often shared after a revealing vote.**
 
 <hr/>
 
