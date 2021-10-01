@@ -23,7 +23,6 @@ export async function initContract() {
     changeMethods: [ 'addUrl', 'addCandidatePair', 'addToPromptArray', 'addVote', 'recordUser' ],
   } )
 }
-
 export function logout() {
   window.walletConnection.signOut()
   // reload page

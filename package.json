@@ -26,6 +26,7 @@
     "jest": "~26.6.2",
     "jest-environment-node": "~26.6.2",
     "near-cli": "~1.6.0",
+    "near-sdk-as": "^3.2.3",
     "nodemon": "~2.0.3",
     "parcel-bundler": "~1.12.4",
     "react-test-renderer": "~17.0.1",
@@ -33,6 +34,7 @@
   },
   "dependencies": {
     "antd": "^4.16.13",
+    "axios": "^0.21.4",
     "near-api-js": "~0.41.0",
     "near-sdk-as": "^3.2.3",
     "react": "~17.0.1",
