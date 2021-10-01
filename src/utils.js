@@ -18,12 +18,11 @@ export async function initContract() {
   // Initializing our contract APIs by contract name and configuration
   window.contract = await new Contract(window.walletConnection.account(), nearConfig.contractName, {
     // View methods are read only. They don't modify the state, but usually return some value.
-    viewMethods: ['getGreeting'],
+    viewMethods: [ 'getUrl', 'didParticipate', 'getAllPrompts', 'getVote', 'getCandidatePair' ],
     // Change methods can modify the state. But you don't receive the returned value when called.
-    changeMethods: ['setGreeting'],
-  })
+    changeMethods: [ 'addUrl', 'addCandidatePair', 'addToPromptArray', 'addVote', 'recordUser' ],
+  } )
 }
-
 export function logout() {
   window.walletConnection.signOut()
   // reload page
