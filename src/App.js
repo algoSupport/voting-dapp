@@ -6,30 +6,38 @@ import { Row, Col } from "antd";
 import getConfig from "./config";
 import Navbar from "./components/navbar/navbar";
 import SiderBar from "./components/sidebar/sidebar";
-import NewsList from "./components/news/newsPage";
 import NewPoll from "./components/new-poll/new-poll";
 import PollingStation from "./components/polling-station/polling-station";
 import Home from "./components/Home/home";
-import DonationPage from "./components/Donation/donation";
-const { networkId } = getConfig(process.env.NODE_ENV || "development");
+const { networkId } = getConfig( process.env.NODE_ENV || "development" );
 
 export default function App() {
+
+  const changeCandidatesFunction = async ( prompt ) => {
+    console.log( prompt )
+    let namePair = await window.contract.getCandidatePair( { prompt: prompt } );
+    localStorage.setItem( "Candidate1", namePair[ 0 ] );
+    localStorage.setItem( "Candidate2", namePair[ 1 ] );
+    localStorage.setItem( "prompt", prompt );
+    window.location.replace( window.location.href + "polling-station" )
+
+  }
+
   return (
     <Router>
       <Navbar />
-      <div style={{ padding: "100px" }}>
+      <div style={ { padding: "100px" } }>
         <Row>
-          <Col span={8}>
+          <Col span={ 8 }>
             <SiderBar />
           </Col>
-          <Col span={16}>
+          <Col span={ 16 }>
             <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/currentNews" component={NewsList} />
-              <Route exact path="/new-poll" component={NewPoll} />
-              <Route exact path="/donation" component={DonationPage} />
-              <Route exact path="/polling-station" component={PollingStation} />
-               
+              <Route exact path="/" >
+                <Home changeCandidates={ changeCandidatesFunction } />
+              </Route>
+              <Route exact path="/new-poll" component={ NewPoll } />
+              <Route exact path="/polling-station" component={ PollingStation } />
             </Switch>
           </Col>
         </Row>
