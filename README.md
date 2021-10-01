@@ -8,11 +8,28 @@ Our DApp (on NEAR) provides a client interface to party game that uncovers the h
 
 Preview
 ===========
+ Home page of our Voting Game :-
+ 
 ![Screenshot (184)](https://user-images.githubusercontent.com/75828535/135623444-8cdec395-55ee-4527-8f1d-93ed965b122a.png)
+
+ Sidebar to provides easy access to any section of the website:-
+ 
 ![Screenshot (185)](https://user-images.githubusercontent.com/75828535/135623456-270a9f6e-73ba-41b3-b118-794cb5c9f46a.png)
+
+ List of available pools for voting :-
+ 
 ![Screenshot (186)](https://user-images.githubusercontent.com/75828535/135623459-3659828a-0e9f-43f3-bf96-bfd9dacc0a38.png)
+
+ Here comes the interesting part,You can create your own poll by just filling some basic information :-
+
 ![Screenshot (187)](https://user-images.githubusercontent.com/75828535/135623461-1973f2bc-9a0c-4af5-868f-e221a698db99.png)
+
+ Click on vote button to submit your response :-
+
 ![Screenshot (188)](https://user-images.githubusercontent.com/75828535/135623462-965d95c8-ed47-4409-b1e1-5ee03a73beea.png)
+
+ After submission you can see the amount of votes given to each option :-
+ 
 ![Screenshot (189)](https://user-images.githubusercontent.com/75828535/135623465-3a697c39-2d9e-4655-a83e-375c08592ab5.png)
 
 
