@@ -1,5 +1,21 @@
-DecentralHack
+The Voting Game
 ==================
+** The Voting Game is a party game that uncovers the hilarious truth behind your friendships. Personal stories are often shared after a revealing vote.**
+
+<hr/>
+
+Our DApp (on NEAR) provides a client interface to party game that uncovers the hilarious truth behind your friendships and store their records permanently on the blockchain and retrieve it whenever needed. Along with this we also provide a B2B solution for clients who produce a huge amount of data which becomes difficult to manage very quickly. With The Voting Game, gameplay varies dramatically based on who you're playing with . We provide a safe encrypted and distributed storage and free solution so that clients can play it over again. Transparency is what we aim at.
+
+Preview
+===========
+![Screenshot (184)](https://user-images.githubusercontent.com/75828535/135623444-8cdec395-55ee-4527-8f1d-93ed965b122a.png)
+![Screenshot (185)](https://user-images.githubusercontent.com/75828535/135623456-270a9f6e-73ba-41b3-b118-794cb5c9f46a.png)
+![Screenshot (186)](https://user-images.githubusercontent.com/75828535/135623459-3659828a-0e9f-43f3-bf96-bfd9dacc0a38.png)
+![Screenshot (187)](https://user-images.githubusercontent.com/75828535/135623461-1973f2bc-9a0c-4af5-868f-e221a698db99.png)
+![Screenshot (188)](https://user-images.githubusercontent.com/75828535/135623462-965d95c8-ed47-4409-b1e1-5ee03a73beea.png)
+![Screenshot (189)](https://user-images.githubusercontent.com/75828535/135623465-3a697c39-2d9e-4655-a83e-375c08592ab5.png)
+
+
 
 This [React] app was initialized with [create-near-app]
 
