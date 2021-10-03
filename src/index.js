@@ -9,3 +9,7 @@ window.nearInitPromise = initContract()
     ReactDOM.render( <App />, document.querySelector( "#root" ) );
   } )
   .catch( console.error );
+
+
+
+//keep going. stay motivated 
