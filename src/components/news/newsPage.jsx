@@ -10,7 +10,7 @@ export default function NewsList() {
 
   useEffect(() => {
     axios
-      .get('https://newsapi.org/v2/everything?q=tesla&from=2021-08-30&sortBy=publishedAt&apiKey=68153724f38c408f99fb6b9215cb0941')
+      .get('process.env.API_URL?q=tesla&from=2021-08-30&sortBy=publishedAt&apiKey=process.env.API_KEY')
       .then((response) => {
         try {
           setData(response.data);
